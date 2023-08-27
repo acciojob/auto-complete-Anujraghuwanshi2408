@@ -19,13 +19,15 @@ const SearchBar = ({filter , setFilter}) => {
     <div>
         <h1>Search items</h1>
         <input type='text' value={value}  onChange={filterArr} />
+        <ul>
         {
             print.map(Element=>(
-                <div>
+                <li>
                     {Element}
-                </div>
+                </li>
             ))
         }
+        </ul>
     </div>
   )
 }
